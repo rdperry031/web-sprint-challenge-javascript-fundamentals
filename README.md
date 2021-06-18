@@ -29,13 +29,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+<!-- .forEach loops through all elements in an array but does not stop or return an array, instead invoking the provided callback function for each element in ascending index order. Always returns undefined value if no callback provided.
+.map is used to return a new array with converted data. The original array is not affected. Example newArray = originalArray.map(item => item * 2 ) would not affect the original array but would return a new array with the item values doubled (if the items are integers) -->
+
 2. Explain the difference between a callback and a higher order function.
+
+<!-- A callback function is passed to a higher order function as an argument. -->
 
 3. Can you explain what a closure is and how you used it in the counter function? 
 
+<!-- Closures are functions created within other functions. They retain access to variables within the outer function's scope. I used an inner .reduce() function to access a previously defined array (that was generated using a for loop and the argument of the outermost function) in order to add the values of the array to the value of the outermost function's argument.   -->
+
 4. Describe the four principles of the 'this' keyword.
 
+<!-- 1. Window binding: references everything or returns a value of undefined in strict mode due to no context, effectively an error
+2.Implicit binding:  whatever is to the left of the dot in dot notation is 'this'
+3. New binding: indicates new object that is created and returned by a specific constructor function
+4. Explicit binding: 'this' is explicitly defined when .call or .apply are invoked -->
+
 5. Why do we need super() in an extended class?
+
+<!-- super() is used to access the methods of a parent class. Functionally replaces .call.  -->
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

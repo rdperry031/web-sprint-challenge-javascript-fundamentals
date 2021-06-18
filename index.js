@@ -31,7 +31,7 @@ For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you ma
 
 function summation(number) {
 
-  let numArray = []
+  const numArray = []
 for (let i=0;i<number;i++){
   numArray.push(i);
 }
@@ -247,7 +247,7 @@ class CubeMaker extends CuboidMaker{
   constructor(prop){
     super(prop);  
  }
- //The formulas for volume and surface area of cuboids works with cubes; the following special methods are redundant but included because the stretch task asks for special methods.
+ //The formulas for volume and surface area of cuboids work for cubes; the following special methods are redundant but included as assigned.
 volume(){
  return Math.pow(this.length, 3);
 }
@@ -262,8 +262,8 @@ const cube = new CubeMaker({
   height: 8,
 })
 
-console.log('stretch task volume', cube.volume()); // 125
-console.log('stretch task surfaceArea', cube.surfaceArea()); //150
+console.log('stretch task volume', cube.volume()); // 512
+console.log('stretch task surfaceArea', cube.surfaceArea()); //384
   
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
   function foo(){
