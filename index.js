@@ -17,7 +17,8 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+// nestedFunction is nested within the same function as the variable internal, so they share the same scope, with the scope being function scope...the scope specifically of the function...the function's scope...
+// Basically the variable would not be accessible if the nestedFunction were not nested within the same function as the variable. 
 
 
 
