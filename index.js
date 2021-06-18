@@ -30,12 +30,15 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
 function summation(number) {
-for (let i=0; i<number; i++){
-  const numArray = number.map(number.i => number.length);
-  // const sum = numArray.reduce
+
+  let numArray = []
+for (let i=0;i<number;i++){
+  numArray.push(i);
 }
-
-
+const sum = numArray.reduce((number, numArray)=>{
+  return numArray + number;
+},number);
+return sum;
 }  
  
 
